@@ -1,4 +1,5 @@
 import React from 'react';
+import "./FilterSearch.scss"
 
 export interface FilterSearchProps {
   label: string;
