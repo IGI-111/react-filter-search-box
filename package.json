@@ -43,6 +43,10 @@
   "peerDependencies": {
     "react": "^17.0.2"
   },
+  "dependencies": {
+    "fuse.js": "^6.5.3",
+    "bulma": "^0.9.3"
+  },
   "scripts": {
     "build": "rollup -c",
     "clean": "rm -rf dist/",
@@ -55,6 +59,5 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "dependencies": {}
+  "types": "dist/index.d.ts"
 }

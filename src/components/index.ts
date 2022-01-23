@@ -1,1 +1,1 @@
-export { default as FilterSearch, FilterSearchProps } from './FilterSearch';
+export { default as FilterSearch } from './FilterSearch';
