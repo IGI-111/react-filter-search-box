@@ -73,7 +73,12 @@ const FilterSearch = (props: FilterSearchProps) => {
   };
 
   const handleSearchBoxSubmit = (rawSearch: string) => {
-    if (props.onSearch !== undefined) {
+    if (
+      filterToSet !== null &&
+      props.selectors[filterToSet].includes(rawSearch)
+    ) {
+      setFilterTag(filterToSet, rawSearch);
+    } else if (props.onSearch !== undefined) {
       props.onSearch(rawSearch, filterTags);
     }
   };
